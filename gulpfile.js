@@ -10,6 +10,7 @@ CONF.JS.MIN               = 'build.min.js';
 CONF.JS.FAT               = 'build.js';
 CONF.ENVIRONMENT          = {};
 CONF.ENVIRONMENT.FILE     = 'config.js';
+CONF.ENVIRONMENT.DEST     = './www/js/config/';
 CONF.ENVIRONMENT.DEV      = './conf/config.dev.js';
 CONF.ENVIRONMENT.DEVBUILD = './conf/config.dev.build.js';
 CONF.ENVIRONMENT.PREPROD  = './conf/config.preprod.js';

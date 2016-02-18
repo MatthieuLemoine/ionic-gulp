@@ -1,7 +1,7 @@
 'use strict';
-var concat         = require('gulp-concat');
-var changed        = require('gulp-changed');
-var wrap           = require('gulp-wrap');
+var concat  = require('gulp-concat');
+var changed = require('gulp-changed');
+var wrap    = require('gulp-wrap');
 
 module.exports = function (gulp,CONF) {
   return function () {

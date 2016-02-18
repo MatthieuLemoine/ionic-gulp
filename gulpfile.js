@@ -2,15 +2,15 @@
 var gulp                  = require('gulp');
 var sequence              = require('gulp-sequence');
 
-const CONF                = {};
-CONF.DEST                 = './www/build/';
+var CONF                = {};
+CONF.DEST                 = './dist/';
 CONF.JS                   = {};
-CONF.JS.SRC               = ['./www/js/**/*.js'];
+CONF.JS.SRC               = ['./src/app/**/*.js'];
 CONF.JS.MIN               = 'build.min.js';
 CONF.JS.FAT               = 'build.js';
 CONF.ENVIRONMENT          = {};
 CONF.ENVIRONMENT.FILE     = 'config.js';
-CONF.ENVIRONMENT.DEST     = './www/js/config/';
+CONF.ENVIRONMENT.DEST     = './src/app/config/';
 CONF.ENVIRONMENT.DEV      = './conf/config.dev.js';
 CONF.ENVIRONMENT.DEVBUILD = './conf/config.dev.build.js';
 CONF.ENVIRONMENT.PREPROD  = './conf/config.preprod.js';

@@ -7,7 +7,7 @@ Gulp tasks for Ionic Development.
 Those gulp tasks automate your development/build/release process.
 They act as a wrapper around ionic commands such as serve, run and build.
 
-You can define environment related variables in a ./config/config.environment.js file.
+You can define environment related variables in a ./conf/config.environment.js file.
 
 You can easily switch between environments using the -e option or targets using the -t option.
 

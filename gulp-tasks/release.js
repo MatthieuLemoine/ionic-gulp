@@ -8,7 +8,7 @@ module.exports = function () {
         var target = argv.t;
         var cmd;
         if(target === 'ios'){
-            cmd = spawn('ionic build ios');
+            cmd = spawn('ionic',['build','ios']);
         }
         else{
             cmd = spawn('./android.release.sh');

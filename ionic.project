@@ -1,0 +1,10 @@
+{
+  "name": "ionic_gulp",
+  "app_id": "123546789",
+  "proxies": [
+    {
+      "path": "/proxy",
+      "proxyUrl": "http://dev"
+    }
+  ]
+}

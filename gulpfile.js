@@ -23,7 +23,7 @@ gulp.task('default', ['serve']);
 // options :
 // -t target
 // -e environment
-gulp.task('serve',sequence('dev','js','watch','ionic-serve'));
+gulp.task('serve',sequence('dev','proxy','js','watch','ionic-serve'));
 gulp.task('run',sequence('update-conf','js','ionic-run'));
 gulp.task('build',sequence('update-conf','js','ionic-build'));
 gulp.task('release', sequence('update-conf','js','release'));
@@ -35,6 +35,7 @@ gulp.task('ionic-build',getTask('ionic-build'));
 
 // UPDATE ENVIRONMENT
 gulp.task('update-conf',getTask('update-conf'));
+gulp.task('proxy',getTask('proxy'));
 gulp.task('dev', getTask('dev'));
 gulp.task('devbuild', getTask('devbuild'));
 gulp.task('preprod', getTask('preprod'));

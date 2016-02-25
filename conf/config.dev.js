@@ -4,8 +4,7 @@
 angular
     .module('ionic-gulp')
     .constant('config', {
-        url: 'http://dev/',
-        db: 'dev_db',
         // Ionic proxy to avoid CORS issue
-        backendUrl: '/proxy'
+        url: '/proxy',
+        db: 'dev_db'
     });

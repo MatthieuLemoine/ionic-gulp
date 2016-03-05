@@ -5,13 +5,13 @@ module.exports = function (gulp) {
   return function () {
     var environment = argv.e;
     if(environment === 'preprod'){
-      gulp.start('preprod');
+      return gulp.start('preprod');
     }
     else if(environment === 'prod'){
-      gulp.start('prod');
+      return gulp.start('prod');
     }
     else{
-      gulp.start('devbuild');
+      return gulp.start('devbuild');
     }
   };
 };

@@ -2,7 +2,7 @@
 var gulp                  = require('gulp');
 var sequence              = require('gulp-sequence');
 
-var CONF                = {};
+var CONF                  = {};
 CONF.DEST                 = './dist/';
 CONF.JS                   = {};
 CONF.JS.SRC               = ['./src/app/**/*.js'];

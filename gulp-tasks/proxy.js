@@ -15,7 +15,7 @@ module.exports = function (gulp) {
     else if(environment === 'prod'){
       url = PROD_URL;
     }
-    gulp
+    return gulp
       .src('./ionic.project')
       .pipe(replace(/https?:\/\/.*\w+/g,url))
       .pipe(gulp.dest('./'));

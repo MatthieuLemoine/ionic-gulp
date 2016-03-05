@@ -7,6 +7,6 @@ echo "************ SIGN APP ****************";
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore platforms/android/keystore.keystore -storepass password app.temp.apk app_keys;
 rm -f app.apk;
 echo "************ ZIP ALIGN ****************";
-zipalign -v 4app.temp.apk app.apk;
+zipalign -v 4 app.temp.apk app.apk;
 rm app.temp.apk;
 echo "************ DONE ****************";
